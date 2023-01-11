@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.StdOut;
 
 public class Deque<Item> implements Iterable<Item> {
 
-	public class Node<T> {
+	private class Node<T> {
 
 		T item;
 		Node<T> next;
@@ -15,7 +15,7 @@ public class Deque<Item> implements Iterable<Item> {
 		}
 	}
 
-	public class DequeIterator<T> implements Iterator<T> {
+	private class DequeIterator<T> implements Iterator<T> {
 
 		private Node<T> current;
 
